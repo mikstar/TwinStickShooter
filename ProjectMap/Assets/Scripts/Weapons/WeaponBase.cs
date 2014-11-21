@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponBase{
+[System.Serializable]
+public class WeaponBase : ScriptableObject{
+
+	protected int ammo;
 
 	// Use this for initialization
 	void Start () {
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public virtual void fire(Transform firePoint)
+	{
+
+	}
+
+	public virtual void release()
+	{
+		
 	}
 }

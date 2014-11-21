@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{9060CE43-80B4-B1CC-861E-954B5D7AF672}</ProjectGuid>
+	<ProjectGuid>{8494499B-3841-7B91-B7CB-08CBF259D51E}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,16 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BasicProjectile.cs" />
-     <Compile Include="Assets\Scripts\CamTemp.cs" />
-     <Compile Include="Assets\Scripts\EnemyBase.cs" />
-     <Compile Include="Assets\Scripts\EnemyZombie.cs" />
-     <Compile Include="Assets\Scripts\HealthSystem.cs" />
-     <Compile Include="Assets\Scripts\HealthSysyemEnemys.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />
-     <Compile Include="Assets\Scripts\Weapons\WeaponManager.cs" />
-     <Compile Include="Assets\Scripts\Weapons\WeaponTestGun.cs" />
+     <Compile Include="Assets\Editor\ScriptebleObjMaker.cs" />
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{9060CE43-80B4-B1CC-861E-954B5D7AF672}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -46,9 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BasicProjectile.cs" />
+     <Compile Include="Assets\Scripts\CamTemp.cs" />
+     <Compile Include="Assets\Scripts\EnemyBase.cs" />
+     <Compile Include="Assets\Scripts\EnemyZombie.cs" />
+     <Compile Include="Assets\Scripts\HealthSystem.cs" />
+     <Compile Include="Assets\Scripts\HealthSysyemEnemys.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponManager.cs" />
+     <Compile Include="Assets\Scripts\Weapons\WeaponTestGun.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
