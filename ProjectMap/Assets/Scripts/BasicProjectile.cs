@@ -26,6 +26,7 @@ public class BasicProjectile : MonoBehaviour {
 		{
 			//when hitting a wall
 		}
+		//else, assuming to hit a player or enemy
 		else
 		{
 			col.collider.gameObject.GetComponent<HealthSystem>().ChangeHealth(damage,source);

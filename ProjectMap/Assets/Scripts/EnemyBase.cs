@@ -20,10 +20,11 @@ public class EnemyBase : MonoBehaviour {
 	{
 		for(int i=0;i<players.Length;i++)
 		{
-			if(players[i] == source.gameObject)
+			if(players[i] == source.parent.gameObject)
 			{
+				Debug.Log("threatadded");
 				threatCounts[i] += dmg;
-				if(threatCounts[i] > threatCounts[targetIndx]*1.3f)
+				if(threatCounts[i] > threatCounts[targetIndx]*1.5f)
 				{
 					targetIndx = i;
 				}
@@ -36,8 +37,11 @@ public class EnemyBase : MonoBehaviour {
 
 		for(int i=0;i<threatCounts.Length;i++)
 		{
-			threatCounts[i] = threatCounts[i]*0.97f;
+			threatCounts[i] = threatCounts[i]*0.995f;
 		}
+		Debug.Log(threatCounts[0]);
+		Debug.Log(threatCounts[1]);
+
 		currentAttackDelay -= Time.deltaTime;
 		movement();
 	}
