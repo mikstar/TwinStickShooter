@@ -16,7 +16,9 @@ public class HealthSysyemEnemys : HealthSystem {
 		currentHealth = Mathf.Clamp(currentHealth-dmg,0,maxhealth);
 		if(currentHealth == 0)
 		{
-			Destroy(gameObject);
+			transform.position = coreScript.spawner.position;
+			currentHealth = maxhealth;
+			gameObject.SetActive(false);
 		}
 		else
 		{

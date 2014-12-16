@@ -4,10 +4,10 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed;
-	public string InptHor;
-	public string InptVer;
-	public string InptAimHor;
-	public string InptAimVer;
+	private string InptHor;
+	private string InptVer;
+	private string InptAimHor;
+	private string InptAimVer;
 	private GameObject aimBase;
 
 	delegate void AimTurn();
@@ -17,37 +17,52 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		aimBase = transform.GetChild(0).gameObject;
 
-		if(InptAimHor == "Mouse")
+	}
+
+	// Update is called once per frame
+	void Update () 
+	{
+		CodeProfiler.Begin("PlayMove:update");
+		//turn/move the moveBase
+		if(Input.GetAxis(InptHor) != 0 || Input.GetAxis(InptVer) != 0)
 		{
+			Vector3 aimDir = aimBase.transform.eulerAngles;
+			float rotation = Mathf.Atan2(Input.GetAxis(InptHor),Input.GetAxis(InptVer))*Mathf.Rad2Deg;
+			transform.eulerAngles = new Vector3(0,rotation,0);
+			aimBase.transform.eulerAngles = aimDir;
+			rigidbody.AddRelativeForce(new Vector3(0,0,(1600*speed)*Time.deltaTime));
+		}
+		//turn the aimBase
+		aimTurn();
+		CodeProfiler.End("PlayMove:update");
+
+
+	}
+
+	public void setInput(int num)
+	{
+		if(num == -1)
+		{
+			InptHor = "Khor";
+			InptVer= "Kver";
 			aimTurn = mouseAim;
 		}
 		else
 		{
+			
+			InptHor = "J" + num + "hor";
+			InptVer = "J" + num + "ver";
+			InptAimHor = "J" + num + "horAim";
+			InptAimVer = "J" + num + "verAim";
 			aimTurn = stickAim;
 		}
 	}
 
-	// Update is called once per frame
-	void FixedUpdate () 
-	{
-		//turn/move the moveBase
-		if(Input.GetAxis(InptHor) != 0 || Input.GetAxis(InptVer) != 0)
-		{
-			float rotation = Mathf.Atan2(Input.GetAxis(InptHor),Input.GetAxis(InptVer))*Mathf.Rad2Deg;
-			transform.eulerAngles = new Vector3(0,rotation,0);
-			rigidbody.AddRelativeForce(new Vector3(0,0,45*speed));
-		}
-		//turn the aimBase
-		aimTurn();
-
-
-	}
-
 	private void stickAim()
 	{
-		if(Input.GetAxis(InptHor) != 0 || Input.GetAxis(InptVer) != 0)
+		if(Input.GetAxis(InptAimHor) != 0 || Input.GetAxis(InptAimVer) != 0)
 		{
-			float rotation = Mathf.Atan2(Input.GetAxis(InptAimHor),Input.GetAxis(InptAimVer))*Mathf.Rad2Deg;
+			float rotation = Mathf.Atan2(Input.GetAxis(InptAimVer),Input.GetAxis(InptAimHor))*Mathf.Rad2Deg;
 			aimBase.transform.eulerAngles = new Vector3(0,rotation,0);
 		}
 	}

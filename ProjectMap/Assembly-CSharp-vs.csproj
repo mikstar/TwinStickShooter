@@ -48,12 +48,19 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BasicProjectile.cs" />
      <Compile Include="Assets\Scripts\CamTemp.cs" />
-     <Compile Include="Assets\Scripts\EnemyBase.cs" />
-     <Compile Include="Assets\Scripts\EnemyZombie.cs" />
+     <Compile Include="Assets\Scripts\CharSelecter\CharselectControllerRegester.cs" />
+     <Compile Include="Assets\Scripts\CharSelecter\CharselectTab.cs" />
+     <Compile Include="Assets\Scripts\CodeProfiler.cs" />
+     <Compile Include="Assets\Scripts\Enemys\EnemyBase.cs" />
+     <Compile Include="Assets\Scripts\Enemys\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Enemys\EnemyZombie.cs" />
      <Compile Include="Assets\Scripts\HealthSystem.cs" />
      <Compile Include="Assets\Scripts\HealthSysyemEnemys.cs" />
+     <Compile Include="Assets\Scripts\PlayerInputAssign.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SpawnArea.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />
+     <Compile Include="Assets\Scripts\Weapons\WeaponMachineGun.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponManager.cs" />
      <Compile Include="Assets\Scripts\Weapons\WeaponTestGun.cs" />
   </ItemGroup>

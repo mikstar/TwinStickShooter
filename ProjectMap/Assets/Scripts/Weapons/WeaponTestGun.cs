@@ -6,23 +6,24 @@ public class WeaponTestGun : WeaponBase {
 	
 	public Mesh bulletModel;
 	public Material bulletMaterial;
-	public int bulletDamage;
-	public float bulletSpeed;
 
-	public override void fire(Transform firePoint)
+	protected override void fire()
 	{
+		CodeProfiler.Begin("Fire_Bullet");
 		GameObject bullet = new GameObject();
 		MeshRenderer rend =  bullet.AddComponent<MeshRenderer>();
 		rend.material = bulletMaterial;
 		rend.castShadows = false;
 		rend.receiveShadows = false;
-		bullet.AddComponent<MeshFilter>().mesh = bulletModel;
-		bullet.transform.position = firePoint.transform.position;
 		bullet.AddComponent<BasicProjectile>().setStats(bulletDamage,bulletSpeed,firePoint);
-		bullet.transform.eulerAngles = firePoint.transform.eulerAngles;
-		bullet.AddComponent<SphereCollider>().isTrigger = true;
+		bullet.AddComponent<MeshFilter>().mesh = bulletModel;
 		bullet.AddComponent<Rigidbody>().isKinematic = true;
-		bullet.transform.localScale = bullet.transform.localScale / 3;
+		bullet.AddComponent<SphereCollider>().isTrigger = true;
+		Transform tempTrans = bullet.transform;
+		tempTrans.position = firePoint.transform.position + firePointOffset;
+		tempTrans.eulerAngles = firePoint.eulerAngles + new Vector3(0,Random.Range(-currentBulletSpread,currentBulletSpread),0);
+		tempTrans.localScale = tempTrans.localScale / 3;
 		bullet.layer = 12;
+		CodeProfiler.End("Fire_Bullet");
 	}
 }

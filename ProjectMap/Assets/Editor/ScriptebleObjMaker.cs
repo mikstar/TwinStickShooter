@@ -12,4 +12,13 @@ public class ScriptebleObjMaker : MonoBehaviour {
 		AssetDatabase.CreateAsset(asset,AssetDatabase.GetAssetPath(Selection.activeObject) + "/NewTestGun.asset");
 		AssetDatabase.SaveAssets();
 	}
+
+	[MenuItem("Assets/Create/Weapon/RayGun")]
+	public static void createRayGun()
+	{
+		WeaponMachineGun asset = ScriptableObject.CreateInstance<WeaponMachineGun>();
+		
+		AssetDatabase.CreateAsset(asset,AssetDatabase.GetAssetPath(Selection.activeObject) + "/NewRayGun.asset");
+		AssetDatabase.SaveAssets();
+	}
 }

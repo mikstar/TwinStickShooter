@@ -16,11 +16,16 @@ public class CamTemp : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 center = Vector3.zero;
+		int p = 0;
 		foreach(GameObject obj in players)
 		{
-			center += obj.transform.position;
+			if(obj)
+			{
+				p++;
+				center += obj.transform.position;
+			}
 		}
-		center = center/players.Length;
+		center = center/p;
 
 
 		transform.position = center+offset;

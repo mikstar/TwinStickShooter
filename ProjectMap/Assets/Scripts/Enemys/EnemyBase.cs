@@ -8,10 +8,15 @@ public class EnemyBase : MonoBehaviour {
 	protected int targetIndx = 0;
 	public float attackDelay;
 	protected float currentAttackDelay = 0;
+	public Transform spawner;
 	public int attackDmg;
+	protected Transform getTF;
+	protected Rigidbody getRB;
 	
 	// Use this for initialization
 	void Start () {
+		getTF = transform;
+		getRB = rigidbody;
 		players = GameObject.FindGameObjectsWithTag("Player");
 		threatCounts = new float[players.Length];
 	}
@@ -22,7 +27,6 @@ public class EnemyBase : MonoBehaviour {
 		{
 			if(players[i] == source.parent.gameObject)
 			{
-				Debug.Log("threatadded");
 				threatCounts[i] += dmg;
 				if(threatCounts[i] > threatCounts[targetIndx]*1.5f)
 				{
@@ -34,16 +38,17 @@ public class EnemyBase : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		
+		CodeProfiler.Begin("Enemy:update");
 		for(int i=0;i<threatCounts.Length;i++)
 		{
 			threatCounts[i] = threatCounts[i]*0.995f;
 		}
-		Debug.Log(threatCounts[0]);
-		Debug.Log(threatCounts[1]);
 
 		currentAttackDelay -= Time.deltaTime;
 		movement();
+
+		CodeProfiler.End("Enemy:update");
 	}
 
 	protected  virtual void movement()

@@ -6,17 +6,26 @@ public class BasicProjectile : MonoBehaviour {
 	private int damage;
 	private float speed;
 	private Transform source;
+	private Transform getTF;
+
+	void Start()
+	{
+		getTF = transform;
+	}
 
 	public void setStats(int dmg, float spd,Transform srce)
 	{
 		speed = spd;
 		damage = dmg;
 		source = srce;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(new Vector3(0,0,speed*Time.deltaTime));
+		CodeProfiler.Begin("bullet");
+		getTF.Translate(new Vector3(0,0,speed*Time.deltaTime));
+		CodeProfiler.End("bullet");
 	}
 	void OnTriggerEnter(Collider col)
 	{

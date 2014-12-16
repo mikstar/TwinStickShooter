@@ -4,55 +4,76 @@ using System.Collections.Generic;
 
 public class WeaponManager : MonoBehaviour {
 
-	public string inptWepChnge;
-	public string inptFire;
+	private string inptWepChnge;
+	private string inptFire;
 	private int wepIndx = 0;
 	public List<WeaponBase> weapons;
 	private bool fireing = false;
+	private bool changing = false;
 
 	delegate void FireCheck();
 	FireCheck fireCheck;
 
 	// Use this for initialization
 	void Start () {
-		if(inptFire == "Mouse")
+		for(int i=0;i<weapons.Count;i++)
 		{
-			fireCheck = mouseFireCheck;
+			weapons[i] = Object.Instantiate(weapons[i]) as WeaponBase;
+			weapons[i].setFPoint(transform);
 		}
-		else
-		{
-			fireCheck = padFireCheck;
-		}
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetAxis(inptWepChnge) == 1)
+		CodeProfiler.Begin("WepHandle:update");
+		if(Input.GetButtonDown(inptWepChnge))
 		{
-			wepIndx ++;
-			if(wepIndx == weapons.Count)
+			if(Input.GetAxis(inptWepChnge) > 0)
 			{
-				wepIndx = 0;
+				weapons[wepIndx].release();
+				wepIndx ++;
+				if(wepIndx == weapons.Count)
+				{
+					wepIndx = 0;
+				}
 			}
-		}
-		else if(Input.GetAxis(inptWepChnge) == -1)
-		{
-			wepIndx --;
-			if(wepIndx < 0)
+			else
 			{
-				wepIndx = weapons.Count - 1;
-			}
-		}
+				weapons[wepIndx].release();
+				wepIndx --;
+				if(wepIndx < 0)
+				{
+					wepIndx = weapons.Count - 1;
+				}
 
+			}
+		}
+		weapons[wepIndx].wepUpdate();
 		fireCheck();
+		CodeProfiler.End("WepHandle:update");
+	}
+
+	public void setInput(int num)
+	{
+		if(num == -1)
+		{
+			inptWepChnge = "KwepChnge";
+			fireCheck = mouseFireCheck;
+		}
+		else
+		{
+			
+			inptWepChnge = "J" + num + "wepChnge";
+			inptFire = "J" + num + "Fire";
+			fireCheck = padFireCheck;
+		}
 	}
 
 	private void mouseFireCheck()
 	{
 		if(Input.GetMouseButtonDown(0))
 		{
-			weapons[wepIndx].fire(transform);
+			weapons[wepIndx].press();
 		}
 		else if(Input.GetMouseButtonUp(0))
 		{
@@ -67,9 +88,9 @@ public class WeaponManager : MonoBehaviour {
 			weapons[wepIndx].release();
 			fireing = false;
 		}
-		else if(Input.GetAxis(inptFire) == 1)
+		else if(!fireing && Input.GetAxis(inptFire) == 1)
 		{
-			weapons[wepIndx].fire(transform);
+			weapons[wepIndx].press();
 			fireing = true;
 		}
 	}
