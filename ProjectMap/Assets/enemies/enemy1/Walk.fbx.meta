@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 29db0f495d888a04ab50d0711aa44bfe
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Head
+    100002: Head_Goal
+    100004: Joint
+    100006: Joint_1
+    100008: Joint_1_2
+    100010: Joint_1_3
+    100012: Joint_2
+    100014: Joint_2_2
+    100016: Joint_2_3
+    100018: Joint_2_4
+    100020: Joint_2_5
+    100022: Joint_3
+    100024: Joint_3_2
+    100026: Joint_3_3
+    100028: Joint_3_4
+    100030: Joint_4
+    100032: Joint_4_2
+    100034: Joint_4_3
+    100036: Joint_5
+    100038: LF_PAW
+    100040: LF_Paw_4_Goal
+    100042: LH_PAW
+    100044: LH_Paw_5_Goal
+    100046: RF_PAW
+    100048: RF_Paw_2_Goal
+    100050: RH_PAW
+    100052: RH_Paw_2_Goal
+    100054: Root
+    100056: Skin
+    100058: Tail
+    100060: Tail_Goal
+    100062: //RootNode
+    100064: walk
+    100066: wings_2_Goal
+    400000: Head
+    400002: Head_Goal
+    400004: Joint
+    400006: Joint_1
+    400008: Joint_1_2
+    400010: Joint_1_3
+    400012: Joint_2
+    400014: Joint_2_2
+    400016: Joint_2_3
+    400018: Joint_2_4
+    400020: Joint_2_5
+    400022: Joint_3
+    400024: Joint_3_2
+    400026: Joint_3_3
+    400028: Joint_3_4
+    400030: Joint_4
+    400032: Joint_4_2
+    400034: Joint_4_3
+    400036: Joint_5
+    400038: LF_PAW
+    400040: LF_Paw_4_Goal
+    400042: LH_PAW
+    400044: LH_Paw_5_Goal
+    400046: RF_PAW
+    400048: RF_Paw_2_Goal
+    400050: RH_PAW
+    400052: RH_Paw_2_Goal
+    400054: Root
+    400056: Skin
+    400058: Tail
+    400060: Tail_Goal
+    400062: //RootNode
+    400064: walk
+    400066: wings_2_Goal
+    4300000: walk
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: walk
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

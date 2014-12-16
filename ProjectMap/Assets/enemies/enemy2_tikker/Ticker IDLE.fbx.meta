@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 3478374be11f81249adc244f70eca361
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Head
+    100002: Head_Goal
+    100004: Joint
+    100006: Joint_1
+    100008: Joint_1_2
+    100010: Joint_1_3
+    100012: Joint_1_4
+    100014: Joint_1_5
+    100016: Joint_1_6
+    100018: Joint_1_7
+    100020: Joint_1_8
+    100022: Joint_2
+    100024: Joint_2_2
+    100026: Joint_2_3
+    100028: Joint_2_4
+    100030: Joint_2_5
+    100032: Joint_2_6
+    100034: Joint_2_7
+    100036: Joint_2_8
+    100038: Joint_3
+    100040: Joint_3_2
+    100042: Joint_3_3
+    100044: Joint_3_4
+    100046: Joint_4
+    100048: Left_Front_paw_Goal
+    100050: Left_Hind_paw_Goal
+    100052: Left_mid_paw_Goal
+    100054: LF_leg
+    100056: LH_leg
+    100058: LM_Leg
+    100060: RF_leg
+    100062: RH_leg
+    100064: Right_front_paw_Goal
+    100066: Right_Hind_paw_Goal
+    100068: Right_Mid_paw_Goal
+    100070: RM_leg
+    100072: Root
+    100074: Skin
+    100076: tail
+    100078: tail_Goal
+    100080: ticker
+    100082: //RootNode
+    400000: Head
+    400002: Head_Goal
+    400004: Joint
+    400006: Joint_1
+    400008: Joint_1_2
+    400010: Joint_1_3
+    400012: Joint_1_4
+    400014: Joint_1_5
+    400016: Joint_1_6
+    400018: Joint_1_7
+    400020: Joint_1_8
+    400022: Joint_2
+    400024: Joint_2_2
+    400026: Joint_2_3
+    400028: Joint_2_4
+    400030: Joint_2_5
+    400032: Joint_2_6
+    400034: Joint_2_7
+    400036: Joint_2_8
+    400038: Joint_3
+    400040: Joint_3_2
+    400042: Joint_3_3
+    400044: Joint_3_4
+    400046: Joint_4
+    400048: Left_Front_paw_Goal
+    400050: Left_Hind_paw_Goal
+    400052: Left_mid_paw_Goal
+    400054: LF_leg
+    400056: LH_leg
+    400058: LM_Leg
+    400060: RF_leg
+    400062: RH_leg
+    400064: Right_front_paw_Goal
+    400066: Right_Hind_paw_Goal
+    400068: Right_Mid_paw_Goal
+    400070: RM_leg
+    400072: Root
+    400074: Skin
+    400076: tail
+    400078: tail_Goal
+    400080: ticker
+    400082: //RootNode
+    4300000: ticker
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: ticker
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
