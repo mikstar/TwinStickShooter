@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 09b5815e405447240a705d0a12554e9c
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: (head)END001
+    100002: body001
+    100004: Bone002(mirrored)(mirrored)(mirrored)001
+    100006: Bone004(mirrored)(mirrored)(mirrored)001
+    100008: Bone005
+    100010: Bone006
+    100012: bruiser_idle
+    100014: //RootNode
+    100016: head001
+    100018: IK Chain009
+    100020: IK Chain010
+    100022: IK Chain011
+    100024: IK Chain012
+    100026: IK Chain013
+    100028: IK Chain014
+    100030: IK Chain015
+    100032: IK Chain016
+    100034: leg_back_L_004
+    100036: leg_back_L_005
+    100038: leg_back_L_006
+    100040: leg_back_L_END(mirrored)(mirrored)(mirrored)001
+    100042: leg_back_L_END001
+    100044: leg_back_R_004
+    100046: leg_back_R_005
+    100048: leg_back_R_006
+    100050: leg_front_L004
+    100052: leg_front_L005
+    100054: leg_front_L006
+    100056: leg_front_L_END001
+    100058: leg_front_R004
+    100060: leg_front_R005
+    100062: leg_front_R006
+    100064: leg_front_R_END001
+    100066: neck001
+    400000: (head)END001
+    400002: body001
+    400004: Bone002(mirrored)(mirrored)(mirrored)001
+    400006: Bone004(mirrored)(mirrored)(mirrored)001
+    400008: Bone005
+    400010: Bone006
+    400012: bruiser_idle
+    400014: //RootNode
+    400016: head001
+    400018: IK Chain009
+    400020: IK Chain010
+    400022: IK Chain011
+    400024: IK Chain012
+    400026: IK Chain013
+    400028: IK Chain014
+    400030: IK Chain015
+    400032: IK Chain016
+    400034: leg_back_L_004
+    400036: leg_back_L_005
+    400038: leg_back_L_006
+    400040: leg_back_L_END(mirrored)(mirrored)(mirrored)001
+    400042: leg_back_L_END001
+    400044: leg_back_R_004
+    400046: leg_back_R_005
+    400048: leg_back_R_006
+    400050: leg_front_L004
+    400052: leg_front_L005
+    400054: leg_front_L006
+    400056: leg_front_L_END001
+    400058: leg_front_R004
+    400060: leg_front_R005
+    400062: leg_front_R006
+    400064: leg_front_R_END001
+    400066: neck001
+    4300000: bruiser_idle
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: bruiser_idle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

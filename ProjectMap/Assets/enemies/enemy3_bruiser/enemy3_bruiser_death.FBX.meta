@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: fc8440b13a9c7f541a02ad938efc815d
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: (head)END004
+    100002: body004
+    100004: Bone002(mirrored)(mirrored)(mirrored)004
+    100006: Bone004(mirrored)(mirrored)(mirrored)004
+    100008: Bone011
+    100010: Bone012
+    100012: Box007
+    100014: bruiser_death
+    100016: //RootNode
+    100018: head004
+    100020: IK Chain033
+    100022: IK Chain034
+    100024: IK Chain035
+    100026: IK Chain036
+    100028: IK Chain037
+    100030: IK Chain038
+    100032: IK Chain039
+    100034: IK Chain040
+    100036: leg_back_L_013
+    100038: leg_back_L_014
+    100040: leg_back_L_015
+    100042: leg_back_L_END004
+    100044: leg_back_R_013
+    100046: leg_back_R_014
+    100048: leg_back_R_015
+    100050: leg_front_L013
+    100052: leg_front_L014
+    100054: leg_front_L015
+    100056: leg_front_L_END004
+    100058: leg_front_R013
+    100060: leg_front_R014
+    100062: leg_front_R015
+    100064: leg_front_R_END004
+    100066: neck004
+    400000: (head)END004
+    400002: body004
+    400004: Bone002(mirrored)(mirrored)(mirrored)004
+    400006: Bone004(mirrored)(mirrored)(mirrored)004
+    400008: Bone011
+    400010: Bone012
+    400012: Box007
+    400014: bruiser_death
+    400016: //RootNode
+    400018: head004
+    400020: IK Chain033
+    400022: IK Chain034
+    400024: IK Chain035
+    400026: IK Chain036
+    400028: IK Chain037
+    400030: IK Chain038
+    400032: IK Chain039
+    400034: IK Chain040
+    400036: leg_back_L_013
+    400038: leg_back_L_014
+    400040: leg_back_L_015
+    400042: leg_back_L_END004
+    400044: leg_back_R_013
+    400046: leg_back_R_014
+    400048: leg_back_R_015
+    400050: leg_front_L013
+    400052: leg_front_L014
+    400054: leg_front_L015
+    400056: leg_front_L_END004
+    400058: leg_front_R013
+    400060: leg_front_R014
+    400062: leg_front_R015
+    400064: leg_front_R_END004
+    400066: neck004
+    4300000: Box007
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box007
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
